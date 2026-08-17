@@ -1,0 +1,16 @@
+[project]
+name = "web-scrape-recon"
+version = "0.1.0"
+description = "Recon toolkit for deciding how to scrape a site: static probe -> URL params -> direct API -> browser-assisted API -> browser -> rendered fallback."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.13",
+    "lxml>=5.3",
+    "playwright>=1.62",
+    "requests>=2.32",
+]
+
+# Firecrawl is deliberately NOT a dependency — it is the last resort and costs
+# money per page. references/walls.md explains when to reach for it and how
+# to add it (`uv add firecrawl-py`) at that point.

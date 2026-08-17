@@ -1,0 +1,29 @@
+# Python caches and virtualenvs
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+.pytest_cache/
+
+# Build outputs
+build/
+dist/
+*.egg-info
+
+# Recon output: response bodies, rendered pages, and captured credentials.
+# These hold live session cookies and bearer tokens — never commit them.
+recon-*/
+sniff-*/
+capture.secrets.json
+auth.json
+storage-state*.json
+*.har
+
+# Local-only
+.env
+.envrc
+notes/
+
+# Editor / OS noise
+.DS_Store
+*.swp
